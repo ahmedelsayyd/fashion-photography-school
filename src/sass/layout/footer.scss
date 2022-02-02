@@ -1,0 +1,94 @@
+.footer{
+    background-color: $bg-color-dark;
+    grid-column: full-start / full-end;
+    padding: 3.5rem 0;
+    align-content: center;
+
+    @include MediaBreakpointDown(tab-port){grid-template-rows: repeat(2, min-content); row-gap: 3rem;}
+
+
+    &__insta{
+        grid-column: center-block-start/ before-center;
+        display: flex;
+        gap: 3.5rem;
+        align-items: center;
+        justify-content: center;
+        @include MediaBreakpointDown(tab-land){grid-column:  full-start / before-center;}
+        @include MediaBreakpointDown(tab-port){grid-row:  2/3; grid-column: full-start / full-end; gap:2rem;}
+
+
+        a{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            color: $color-gray-500;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+
+            svg{
+                width: 1.4rem;
+                height: 1.4rem;
+                fill: $color-gray-500;
+            }
+
+
+            
+            &:hover{
+                color: $color-gray-400;
+            }
+
+            
+            &:hover svg{
+                fill: $color-gray-400;
+            }
+        }
+    }
+    &__links{
+        grid-column: grid-center/ center-block-end;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $color-gray-500;
+
+        @include MediaBreakpointDown(tab-land){grid-column:  before-center / full-end; justify-self: center;}
+        @include MediaBreakpointDown(tab-port){grid-row:  1/2; grid-column: full-start / full-end;}
+
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            
+            li{
+                flex-shrink: 0;
+                border-left: 1px solid $color-gray-600;
+                padding: 0 2.5rem;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+
+                @include MediaBreakpointDown(xs){padding: 0 1.5rem;}
+
+                &:hover{
+                    color: $color-gray-400;
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    background-color: $bg-color-dark;
+    border-top: 1px solid $color-gray-600;
+    grid-column: full-start / full-end;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    color: $color-gray-500;
+    font-weight: 500;
+    word-spacing: .9px;
+}

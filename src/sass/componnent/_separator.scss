@@ -1,0 +1,9 @@
+.separator{
+    
+
+    &.medium{ width: 25%;}
+    &.small{width: 18%;}
+    &.thin{border: 1px solid $color-gray-400; }
+    &.fit{border-top: 1px solid $color-gray-400;}
+
+}

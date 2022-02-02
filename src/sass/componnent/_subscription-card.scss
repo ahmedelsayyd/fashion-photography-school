@@ -1,0 +1,28 @@
+.subscription__card{
+    display: grid;
+    justify-items: center;
+    .sub-card{
+        border: 1px solid $color-gray-500;
+        background-color: $bg-color-light;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        // padding: 4rem 5rem;
+        padding-block: clamp(3rem , 3vw, 4rem);
+        padding-inline: clamp(4rem , 4vw, 5rem);
+        gap: 3rem;
+
+        &__photo{
+            width: 22rem;
+            height: 25rem;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        &__price{ font-size: 3.25rem; font-family: 'Cinzel', serif; margin-bottom: -1rem;}
+
+        &__link{ transform: translateX(1rem);}
+
+    }
+}

@@ -1,0 +1,51 @@
+.heading-1{
+    font-size: max(4.2vw, 4.5rem);
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: $color-gray-700;
+}
+
+.heading-2{
+    font-size: max(2vw, 2.75rem);
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: $color-gray-700;
+
+    &--light{color: $color-gray-400;}
+    &--dark{ color: $color-gray-700;}
+}
+
+.heading-4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $color-skin-600;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+
+    &--dark{color: $color-gray-600;}
+}
+
+
+
+.paragraph-sm{ 
+    font-size: 1.34rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    &--dark{color: $color-gray-500;}
+    &--light{color: $color-gray-300;}
+}
+
+.paragraph-md{ 
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    font-style: italic;
+
+    &--dark{color: #cbc9c5; font-size: 1.4rem;}
+    &--light{color: $color-gray-600;}
+    &.italic{font-style: italic;}
+}
+.paragraph-lg{ 
+    font-size: 2.4rem;
+}

@@ -1,0 +1,52 @@
+.container{
+    display: grid;
+    grid-template-rows: [nav-start]7.5rem[nav-end header-start] 45vw [header-end about-start] 
+                        41vw [about-end features-start] min-content [features-end space-start]7.5rem[space-end learn-start]
+                        43vw[learn-end growth-start] max-content [growth-end program-start] 50vw [program-end sub-start]
+                        43vw [sub-end reviews-start] min-content [reviews-end who-us-start] 41vw [who-us-end idea-start]
+                        min-content [idea-end cost-start] 45vw[cost-end footer-start] 
+                        min-content [footer-end copyright-start] min-content[copyright-end];
+
+    // grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: [full-start]1fr 1fr 1fr [before-center] 1fr [grid-center] 1fr [after-center] 1fr 1fr 1fr[full-end];
+
+
+
+
+
+    @include MediaBreakpointDown(md){
+            grid-template-rows: 
+            [nav-start] 7.5rem [nav-end heade-start] 53vw [header-end about-start]
+            41vw [about-end features-start] min-content [features-end space-start]6.5rem[space-end learn-start]
+            41vw[learn-end growth-start] min-content[growth-end program-start] 55vw [program-end sub-start]
+            50vw [sub-end reviews-start] min-content [reviews-end who-us-start] min-content[who-us-end idea-start]
+            min-content [idea-end cost-start] min-content[cost-end footer-start] 
+            min-content [footer-end copyright-start] min-content[copyright-end];
+    }
+
+    
+    @include MediaBreakpointDown(tab-port){
+
+            grid-template-rows: 
+            [nav-start] 7.5rem [nav-end header-start] min-content [header-end about-start]
+            min-content [about-end features-start] min-content [features-end space-start]6.5rem[space-end learn-start]
+            min-content[learn-end growth-start] min-content[growth-end program-start] 92vw [program-end sub-start]
+            min-content [sub-end reviews-start] min-content [reviews-end who-us-start] min-content [who-us-end idea-start]
+            min-content [idea-end cost-start] min-content[cost-end footer-start] 
+            min-content [footer-end copyright-start] min-content[copyright-end];
+    }
+    
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: [full-start]1fr [center-block-start] 1fr 1fr [before-center] 1fr [grid-center] 1fr [after-center] 1fr 1fr [center-block-end] 1fr[full-end];
+
+}
+
+.row-col-10{
+    display: grid;
+    grid-template-columns: [full-start]1fr [center-block-start] 1fr repeat(2, 1fr) 1fr [before-center] 1fr [grid-center] 1fr [after-center] 1fr repeat(2, 1fr) 1fr [center-block-end] 1fr[full-end];
+
+}
